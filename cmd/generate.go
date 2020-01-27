@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"github.com/hlindberg/tiler/internal/svgostuff"
 	"github.com/spf13/cobra"
 )
 
@@ -12,6 +13,7 @@ var generateCmd = &cobra.Command{
 	`,
 	Run: func(cmd *cobra.Command, args []string) {
 		// Call the busn logic
+		svgostuff.SimpleCircle()
 	},
 
 	Args: func(cmd *cobra.Command, args []string) error {
